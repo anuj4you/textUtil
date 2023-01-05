@@ -16,6 +16,10 @@ export default function TextArea(props) {
 
   const [text, setText] = useState("Paste or enter text here");
 
+  let count = text.length;
+  let wordCount = text.split(" ").length;
+  let readingTime = Math.ceil(wordCount*0.016);
+
   return (
     <div>
       <div className="container my-3">
@@ -28,7 +32,7 @@ export default function TextArea(props) {
           onChange={changeHandler}
           className="form-control"
           id="textArea"
-          style={{ height: "250px" }}
+          style={{ height: "300px" }}
         ></textarea>
 
         <button
@@ -43,6 +47,10 @@ export default function TextArea(props) {
         >
           Change to Lower Case
         </button>
+      </div>
+      <div className="container my-2">
+      <h4>Text Summary</h4>
+        <p><b>{count}</b> characters and <b>{wordCount}</b> words with reading time of <b>{readingTime}</b> minutes </p>
       </div>
     </div>
 
