@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Summary from "./components/Summary";
+
 import TextArea from "./components/TextArea";
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
     <div>
   
   <Navbar title="TextUtils" item="AboutUs" />
-  <TextArea heading="Enter text here" />
-  <Summary/>
+  <TextArea heading="Enter text below" />
+  
     </div>
   );
 }
