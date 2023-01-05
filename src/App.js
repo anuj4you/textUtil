@@ -1,54 +1,15 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Summary from "./components/Summary";
+import TextArea from "./components/TextArea";
 
 function App() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            TextUtil
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  AboutUs
-                </a>
-              </li>
-            </ul>
-
-            <button className="btn btn-outline-success" type="submit">
-              Dark Mode
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <div className="form-floating">
-        <textarea
-          className="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea2"
-          style="height: 100px"
-        ></textarea>
-        <label for="floatingTextarea2">Comments</label>
-      </div>
+  
+  <Navbar title="TextUtils" item="AboutUs" />
+  <TextArea heading="Enter text here" />
+  <Summary/>
     </div>
   );
 }
