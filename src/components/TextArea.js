@@ -37,13 +37,13 @@ export default function TextArea(props) {
 
         <button
           onClick={upperHandler}
-          className="btn btn-outline-primary my-3 mx-2"
+          className="btn btn btn-primary my-3 mx-2"
         >
           Change to Upper Case
         </button>
         <button
           onClick={lowerHandler}
-          className="btn btn-outline-secondary my-3 mx-2"
+          className="btn btn btn-primary my-3 mx-2"
         >
           Change to Lower Case
         </button>
