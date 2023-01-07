@@ -1,4 +1,4 @@
-textUtil - Utilize text functions and save time!
+**textUtil - Utilize text functions and save time!**
 
 Dealing with texts is a common day-to-day activity. Here you can
 find all the text utilities to help you in performing your
